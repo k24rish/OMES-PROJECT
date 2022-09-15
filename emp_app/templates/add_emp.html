@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>add_emp</title>
+    <style>
+
+      body{
+      
+        background-color:teal;
+      }
+      
+      .container{
+        margin-top:50px;
+      }
+       </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add An Employee!</h1>
+
+      <form action = "/add_emp" method ="post">
+        <hr>
+         {% csrf_token %}
+          <label for="first_name">First_name</label><br>
+          <input type="text" id="first_name" name="first_name" value = "{{first_name}}"><br>
+
+          <label for="last_name">Last_name</label><br>
+          <input type="text" id="last_name" name="last_name" value = "{{last_name}}"><br>
+
+          <label for="sallary">Sallary</label><br>
+          <input type="inteser" id="sallary" name="sallary" value = "{{sallary}}"><br>
+
+          <label for="bonus">Bonus</label><br>
+          <input type="inteser" id="bonus" name="bonus" value = "{{bonus}}"><br>
+
+          <label for="phone">Phone</label><br>
+          <input type="inteser" id="phone" name="phone" value = "{{phone}}"><br>
+
+          <label for="role">Role</label><br>
+          <input type="text" id="role" name="role" value = "{{role}}"><br>
+
+          <label for="hire_date">Hire_date</label><br>
+          <input type="datetime" id="hire_date" name="hire_date" value = "{{hire_date}}"><br>
+
+          <label for="dept">Dept</label><br>
+          <input type="text" id="dept" name="dept" value = "{{dept}}">
+
+
+
+
+        
+          <hr>
+        
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
+    
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </div>
+  </body>
+</html>
